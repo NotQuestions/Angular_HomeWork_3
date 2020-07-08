@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "agular-homework2"
+    }
+  },
+  "defaultProject": "agular-homework2",
+  "cli": {
+    "analytics": "223a737e-270f-4406-ab01-7a0e2ac25a82"
+  }
 }
