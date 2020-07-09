@@ -7,10 +7,11 @@ import {Comment} from '../../models/Comment';
   providedIn: 'root'
 })
 export class CommentService {
-
   constructor(private httpClient: HttpClient) { }
-
-  getOneCommentPostOfUser(id): Observable<Comment>{
-    return this.httpClient.get<Comment>(`https://jsonplaceholder.typicode.com/comments?postId=${id}`);
+  getAllComments(): Observable<Comment[]>{
+    return this.httpClient.get<Comment[]>('https://jsonplaceholder.typicode.com/comments');
+  }
+  getCommentsOfPost(id): Observable<Comment[]>{
+    return this.httpClient.get<Comment[]>(`https://jsonplaceholder.typicode.com/comments?postId=${id}`);
 }
 }

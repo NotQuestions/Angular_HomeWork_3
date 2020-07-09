@@ -1,3 +1,6 @@
-<!--<app-post *ngFor="let post of posts" [post]="post"></app-post>-->
-<app-user *ngFor="let user of users" [user]="user"></app-user>
-
+<ul>
+  <li routerLink="showAllUsers"><a>User</a></li>
+  <li routerLink="showAllPost"><a>Post</a></li>
+  <li routerLink="showAllComments"><a>Comment</a></li>
+</ul>
+<router-outlet></router-outlet>

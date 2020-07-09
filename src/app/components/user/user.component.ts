@@ -16,15 +16,15 @@ export class UserComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  getPostOfUser(userId): void{
-    this.postService.getPostsofUser(userId).subscribe(value => {
-      for (const post of value) {
-        this.commentService.getOneCommentPostOfUser(post.id).subscribe(coments => {
-          console.log('Post:', post, coments);
-        });
-      }
-    });
-  }
+  // getPostOfUser(userId): void{
+  //   this.postService.getPostsofUser(userId).subscribe(value => {
+  //     for (const post of value) {
+  //       this.commentService.getOneCommentPostOfUser(post.id).subscribe(coments => {
+  //         console.log('Post:', post, coments);
+  //       });
+  //     }
+  //   });
+  // }
 
 
 }
